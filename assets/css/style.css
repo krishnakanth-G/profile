@@ -952,3 +952,36 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Skills new section
+--------------------------------------------------------------*/
+.skills.section-bg {
+  background-color: #f7f9fc;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.skills-list i {
+  color: #149ddd;
+  /* Bootstrap blue or choose your theme color */
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
