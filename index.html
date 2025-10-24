@@ -174,14 +174,18 @@
             <ul class="skills-list">
               <li><i class="bi bi-check-circle-fill"></i> Machine Learning</li>
               <li><i class="bi bi-check-circle-fill"></i> Python</li>
-              <li><i class="bi bi-check-circle-fill"></i> SQL</li>
+              <li><i class="bi bi-check-circle-fill"></i> PySpark</li>
+              <li><i class="bi bi-check-circle-fill"></i> Pytorch</li>
+              <li><i class="bi bi-check-circle-fill"></i> Transformers</li>
             </ul>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <ul class="skills-list">
-              <li><i class="bi bi-check-circle-fill"></i> Hadoop and Big Data</li>
-              <li><i class="bi bi-check-circle-fill"></i> Pyspark</li>
-              <li><i class="bi bi-check-circle-fill"></i> Data Visualization</li>
+              <li><i class="bi bi-check-circle-fill"></i> Big Data</li>
+              <li><i class="bi bi-check-circle-fill"></i> LangChain</li>
+              <li><i class="bi bi-check-circle-fill"></i> LangGraph</li>
+              <li><i class="bi bi-check-circle-fill"></i> LangSmith</li>
+              <li><i class="bi bi-check-circle-fill"></i> SQL</li>
             </ul>
           </div>
         </div>
@@ -200,15 +204,14 @@
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">Work</h3>
             <div class="resume-item">
-              <h4>Data Analyst</h4>
+              <h4>Data Analyst (ML and GenAI)</h4>
               <h5>01/11/2022 - Present</h5>
               <p><em>Analytics Department</em></p>
               <p><a href="https://www.defteam.com/">DEFTeam Solutions Private Limited</a></p>
-              <p>Data Analyst skilled in SAS-to-Spark migration, scalable data pipeline design, and NLP model
-                development. Proven ability
-                to translate business requirements into robust PySpark workflows and deploy sentiment analysis APIs
-                using BERT and
-                FastAPI. Strong focus on automation, data quality, and collaboration in high-impact environments.
+              <p>led end-to-end development and deployment of AI solutions including a BERT-based sentiment analysis API (~95% test accuracy), 
+                LLM-powered FAQ/support chatbot (prompt templates, guardrails, memory, RBAC), and a LangGraph agentic workflow using Reflexion 
+                for automated feedback/review cycles. Delivered a 35-45% reduction in review turnaround, improved management edit rates to 35%, 
+                and orchestrated SAS-to-PySpark migration on Azure Databricks resulting in 30% faster data pipelines and robust, validated business logic migration.
               </p>
             </div>
             <div class="resume-item pb-0">
@@ -248,8 +251,22 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Projects</h3>
             <div class="resume-item">
+              <h4>Intelligent Assistant and Agentic Review Assistant for <a href="https://newwe.io/">Newwe</a></h4>
+              <h5>2024 - 2025</h5>
+              <p>Designed and deployed an LLM FAQ assistant and a LangGraph-based agentic review workflow to streamline
+                support and performance reviews with reliable, auditable automation.</p>
+              <ul>
+                <li>Built an LLM-powered FAQ/support chatbot with prompt templates, short-term memory, guardrails, and out-of-scope
+                  fallbacks. Exposed as RBAC-secured REST endpoints for consistent multi-turn answers.</li>
+                <li>Implemented optional RAG grounding with tuned chunking/embeddings and top-k retrieval to improve relevance for
+                  policy and task guidance; added telemetry for latency, errors, and drift.</li>
+                <li>Engineered a Reflexion-style LangGraph workflow that iterates critique-revise cycles to draft task summaries,
+                  feedback, and ratings. Integrated HITL approvals, and prompt versioning.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>Enterprise SAS to Spark Migration for Scalable Data Processing</h4>
-              <h5>2023 - 2025</h5>
+              <h5>2023 - 2024</h5>
               <p>This project involved migrating legacy SAS data processing jobs to PySpark to enhance scalability,
                 performance, and
                 maintainability while preserving the existing business logic.
@@ -269,31 +286,18 @@
               <h4>End-to-End Sentiment Analysis using BERT</h4>
               <h5>2022 - 2023</h5>
               <p>
-                Built and deployed a sentiment analysis system for text classification. The solution was integrated as an API for seamless internal use.
+                Built and deployed a sentiment analysis system for text classification. The solution was integrated as an API for
+                seamless internal use.
               </p>
               <ul>
-                <li>Independently developed an end-to-end sentiment analysis system, including data cleaning, preprocessing, model training, evaluation, and deployment.</li>
-                <li>Trained a BERT-based model to classify text into positive,neutral, or negative sentiment categories. Achieved approximately 95% accuracy on the test set with balanced precision and recall.</li>
+                <li>Independently developed an end-to-end sentiment analysis system, including data cleaning, preprocessing, model
+                  training, evaluation, and deployment.</li>
+                <li>Trained a BERT-based model to classify text into positive,neutral, or negative sentiment categories. Achieved
+                  approximately 95% accuracy on the test set with balanced precision and recall.</li>
                 <li>Deployed the model using FastAPI as a REST API service for seamless integration with internal systems.</li>
-                <li>Applied effective text normalization, handled class imbalance, and fine-tuned model parameters for improved reliability.</li>
+                <li>Applied effective text normalization, handled class imbalance, and fine-tuned model parameters for improved
+                  reliability.</li>
               </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Estimation of Average claims cost</h4>
-              <h5>2021 - 2022</h5>
-              <p>This project is under Department of Mathematics and Computer Science, SSSIHL & <a
-                  href="https://techactuarial.com/">Tech Actuarial</a> Company. The aim of the project is to estimate
-                the claim cost for automobile crashes. Main work consists of the following,</p>
-              <ul>
-                <li>Development of framework to estimate average claims cost for automobile crashes using Machine
-                  learning techniques.</li>
-                <li>Implementation of Generalized linear models with suitable distributions and Artificial neural
-                  network that fits the automobile crashes data.</li>
-                <li>Comparative study between the relevant models.</li>
-                <li>Interpreting models with Local Interpretable Model-agnostic Explanations.</li>
-              </ul>
-              <p>Source Code: <a href="https://github.com/krishnakanth-G/Estimation-of-Average-claims-cost">Cilck
-                  Here</a></p>
             </div>
           </div>
         </div>
